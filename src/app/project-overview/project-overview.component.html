@@ -1,18 +1,18 @@
 <section class="project-overview-container">
     <div class="img-container">
-        <img src="project-1.webp" alt="">
+        <img [src]="project.image" [alt]="project.title">
     </div>
     <div class="project-overview-text">
         <span class="project-overview-position">
-            Program Management | Team Leader
+            {{ project.position }}
         </span>
-    
+
         <h2>
-            Siemens Energy - Prime Opportunity & E2A Accelerator
+            {{ project.title }}
         </h2>
-        
+
         <p>
-            Integration of two solutions/products with the rest of the Sales Department Projects. 
+            {{ project.description }}
         </p>
 
         <button class="project-overview-button">
