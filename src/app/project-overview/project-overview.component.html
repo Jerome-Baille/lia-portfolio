@@ -15,7 +15,7 @@
             {{ project.description }}
         </p>
 
-        <button class="project-overview-button">
+        <button class="project-overview-button" [ngClass]="'button-bg-' + project.actionColor">
             View Project
         </button>
     </div>

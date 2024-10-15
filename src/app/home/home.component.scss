@@ -1,12 +1,16 @@
 .home-container {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
 .home-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    background-color: #FAFAFA;
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 0;
+    }
 }
