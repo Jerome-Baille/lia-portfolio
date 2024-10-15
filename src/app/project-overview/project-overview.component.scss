@@ -1,6 +1,6 @@
 .project-overview-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 40px;
     background-color: white;
     border-radius: 8px;
@@ -14,15 +14,28 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .project-overview-container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .img-container {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: auto;
 
     img {
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-container {
+        height: 400px;
     }
 }
 
@@ -76,11 +89,6 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     }
 
-    &:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.5);
-    }
-
     /* Ripple effect */
     position: relative;
     overflow: hidden;
@@ -111,4 +119,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+    gap: 40px;
 }
