@@ -1,10 +1,16 @@
 .footer {
     background-color: #FAFAFA;
+    font-size: 14px;
 
     .footer-layout {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         padding: 20px;
+    }
+
+    &-right-column {
+        display: flex;
+        gap: 20px;
     }
 }
